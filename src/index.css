@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	background: #f0f0f5;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.row .col-md-6 {
+	flex: 1;
+	margin-bottom: 20px;
+}
+
+.row .offset-md-3 {
+	margin-left: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-control {
+	border-radius: 0;
+	border: 1px solid #ddd;
+	padding: 10px;
+	font-size: 16px;
+	color: #666;
+	height: auto;
+}
+
+.form-control:focus {
+	border-color: #999;
+	box-shadow: none;
+}
+
+.form-group label {
+	font-size: 16px;
+	color: #666;
+	font-weight: bold;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'] {
+	width: 100%;
+}
+
+.form-group .form-text {
+	font-size: 12px;
+	color: #999;
+	margin-top: -10px;
+}
+
+.btn {
+	background: #7d40e7;
+	color: #fff;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	transition: background 0.2s;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: #7d40e7d7;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.flex-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color: #ddd;
+	padding: 10px;
+}
+
+.delete-btn {
+	background: #f00;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	transition: background 0.2s;
+	cursor: pointer;
+}
+
+.delete-btn:hover {
+	background: #f00d7d;
 }
